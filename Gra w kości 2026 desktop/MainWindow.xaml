@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gra_w_kości_2026_desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="350" Background="#ED27C121">
     <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
 
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <Image x:Name="Kosc1Obraz"
+                       Width="70"
+                       Height="70"
+                       Margin="10"
+                       Source="/Image/kosc0.png"
+                       MouseLeftButtonDown="Kosc1_Click"/>
+
+                <Image x:Name="Kosc2Obraz"
+                       Width="70"
+                       Height="70"
+                       Margin="10"
+                       Source="/Image/kosc1.png"
+                       MouseLeftButtonDown="Kosc2_Click"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <Image x:Name="Kosc3Obraz"
+                       Width="70"
+                       Height="70"
+                       Margin="10"
+                       Source="/Image/kosc2.png"
+                       MouseLeftButtonDown="Kosc3_Click"/>
+
+                <Image x:Name="Kosc4Obraz"
+                       Width="70"
+                       Height="70"
+                       Margin="10"
+                       Source="/Image/kosc3.png"
+                       MouseLeftButtonDown="Kosc4_Click"/>
+
+                <Image x:Name="Kosc5Obraz"
+                       Width="70"
+                       Height="70"
+                       Margin="10"
+                       Source="/Image/kosc4.png"
+                       MouseLeftButtonDown="Kosc5_Click"/>
+
+            </StackPanel>
+
+            <Button x:Name="RzutButton"
+                    Content="RZUT"
+                    Width="120"
+                    Height="40"
+                    Margin="10"
+                    HorizontalAlignment="Center"
+                    Background="#ED275021"
+                    Foreground="White"
+                    Click="RzutButton_Click"/>
+
+            <TextBlock x:Name="WynikText"
+                       Text="0"
+                       FontSize="40"
+                       HorizontalAlignment="Center"/>
+
+        </StackPanel>
     </Grid>
 </Window>
